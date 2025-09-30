@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <form id="contactForm">
+        <h2>Contact Form</h2>
+        <br/>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="e.g. John parkar">
+        <small class="error" id="nameError"></small>
+
+        <br/>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="e.g. john12@gmail.com">
+        <small class="error" id="emailError"></small>
+        <br/>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Enter Message here..."></textarea>
+        <small class="error" id="messageError"></small>
+        <br/>
+
+        <label for="DOB">Date of Birth:</label>
+        <input type="date" id="DOB" name="DOB">
+        <small class="error" id="DOBError"></small>
+        <br/>
+
+        <p>Genderr:</p>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" value="female">Female</label>
+        <label><input type="radio" name="gender" value="other">Others</label>
+        <br/>
+
+        <label><input type="checkbox" name="check">I am not robot</label>
+        <br/>
+
+        <button type="submit">Submit</button>
+        <p id="successMessage"></p>
+    </form>    
+    </body>
+    <script src="script.js"></script>
+</html>
